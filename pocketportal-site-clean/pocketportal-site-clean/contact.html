@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Request a PocketPortal demo — see practice management built for attorneys.">
+<title>Get a Demo — PocketPortal</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Pocket<span>Portal</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Get a demo</a>
+    </div>
+    <a href="contact.html" class="btn btn-gold nav-cta">Get a demo</a>
+  </div>
+</nav>
+
+<section class="contact-hero">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-form-wrap">
+        <div class="section-badge">Free 30-minute demo</div>
+        <h1>See PocketPortal in action.</h1>
+        <p style="color:rgba(255,255,255,.6);font-size:15px;margin-bottom:28px;line-height:1.7">Tell us a little about your practice and we'll show you exactly how PocketPortal fits your workflow — no generic pitch, no pressure.</p>
+        <form id="demo-form">
+          <div class="form-row">
+            <div class="form-field">
+              <label>First name</label>
+              <input type="text" id="f-first" placeholder="First name" required>
+            </div>
+            <div class="form-field">
+              <label>Last name</label>
+              <input type="text" id="f-last" placeholder="Last name" required>
+            </div>
+          </div>
+          <div class="form-field">
+            <label>Email address</label>
+            <input type="email" id="f-email" placeholder="you@yourfirm.com" required>
+          </div>
+          <div class="form-field">
+            <label>Firm name</label>
+            <input type="text" id="f-firm" placeholder="Your firm name">
+          </div>
+          <div class="form-field">
+            <label>State bar</label>
+            <input type="text" id="f-state" placeholder="e.g. Louisiana">
+          </div>
+          <div class="form-field">
+            <label>Practice size</label>
+            <select id="f-size">
+              <option value="">Select...</option>
+              <option>Solo practitioner</option>
+              <option>2-5 attorneys</option>
+              <option>6-15 attorneys</option>
+              <option>16+ attorneys</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label>Primary practice area(s)</label>
+            <input type="text" id="f-area" placeholder="e.g. Estate planning, family law, criminal defense">
+          </div>
+          <div class="form-field">
+            <label>What is your biggest practice management challenge right now?</label>
+            <textarea id="f-challenge" placeholder="Tell us what is not working with your current setup..."></textarea>
+          </div>
+          <div class="form-field">
+            <label>Which plan are you most interested in?</label>
+            <select id="f-plan">
+              <option value="">Not sure yet</option>
+              <option>Base ($29+/user/mo)</option>
+              <option>Professional ($59+/user/mo)</option>
+              <option>Premium ($99+/user/mo)</option>
+            </select>
+          </div>
+          <button type="button" class="btn btn-gold" id="submit-demo" onclick="handleDemoSubmit()" style="margin-top:8px">Request my free demo</button>
+          <div id="demo-success" style="display:none;background:rgba(26,107,69,.2);border:1px solid #1A6B45;border-radius:8px;padding:14px 16px;font-size:14px;color:#7DCCA4;margin-top:12px;line-height:1.6">
+            Thank you — we have received your request and will be in touch within 2-3 business days to schedule your demo.
+          </div>
+        </form>
+      </div>
+
+      <div class="contact-sidebar">
+        <div class="sidebar-card">
+          <h3>What to expect</h3>
+          <div class="expect-item">
+            <div class="expect-num">01</div>
+            <div>
+              <strong>Submit your request</strong>
+              <p>Tell us about your practice so we can tailor the demo to your needs.</p>
+            </div>
+          </div>
+          <div class="expect-item">
+            <div class="expect-num">02</div>
+            <div>
+              <strong>We will reach out within 2-3 business days</strong>
+              <p>A real person will contact you to schedule a 30-minute session.</p>
+            </div>
+          </div>
+          <div class="expect-item">
+            <div class="expect-num">03</div>
+            <div>
+              <strong>See it live</strong>
+              <p>We will walk you through the features most relevant to your practice.</p>
+            </div>
+          </div>
+          <div class="expect-item">
+            <div class="expect-num">04</div>
+            <div>
+              <strong>Start your free trial</strong>
+              <p>14 days free, no credit card required. We will help you get set up.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar-card sidebar-card-dark">
+          <h3>Questions? Just ask.</h3>
+          <p style="color:rgba(255,255,255,.6);font-size:14px;margin-bottom:16px">Prefer to reach out directly? We are happy to help.</p>
+          <div class="contact-direct">
+            <a href="mailto:hello@pocketportal.io">hello@pocketportal.io</a>
+          </div>
+          <div class="contact-direct" style="margin-top:10px">
+            <a href="https://pocketportal.io">pocketportal.io</a>
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>Already an LSBA member?</h3>
+          <p style="font-size:14px;color:rgba(255,255,255,.6);line-height:1.6">PocketPortal is designed to work alongside vLex Fastcase, the free legal research tool included with your LSBA membership — so you can search Louisiana statutes and case law without ever leaving your workflow.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">Pocket<span>Portal</span></div>
+      <div class="footer-tagline">Your whole practice, right in your pocket.</div>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <div class="footer-col-title">Product</div>
+        <a href="index.html">Features</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Demo</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Company</div>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">&copy; 2026 PocketPortal &middot; hello@pocketportal.io &middot; Built by attorneys, for attorneys.</div>
+  </div>
+</footer>
+
+<script>
+function handleDemoSubmit() {
+  const first = document.getElementById('f-first').value.trim();
+  const email = document.getElementById('f-email').value.trim();
+  const btn = document.getElementById('submit-demo');
+  const success = document.getElementById('demo-success');
+  if (!first || !email || !email.includes('@')) { alert('Please fill in your name and email address.'); return; }
+  btn.disabled = true; btn.textContent = 'Sending...';
+  const data = { name: first + ' ' + document.getElementById('f-last').value.trim(), email, firm: document.getElementById('f-firm').value, state: document.getElementById('f-state').value, size: document.getElementById('f-size').value, area: document.getElementById('f-area').value, challenge: document.getElementById('f-challenge').value, plan: document.getElementById('f-plan').value, source: 'pocketportal.io demo request' };
+  fetch('https://formspree.io/f/xjgqzarq', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(data) })
+  .then(() => { btn.style.display = 'none'; success.style.display = 'block'; })
+  .catch(() => { btn.style.display = 'none'; success.style.display = 'block'; });
+}
+</script>
+</body>
+</html>
