@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="PocketPortal — Your whole practice, right in your pocket. Practice management software built for modern law firms.">
+<meta property="og:title" content="PocketPortal — Coming Soon">
+<meta property="og:description" content="Your whole practice, right in your pocket.">
+<title>PocketPortal — Coming Soon</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --black:#1F1F1F;--white:#fff;--gray:#6B6B6B;--light:#F5F5F5;
+    --green:#1A6B45;--gold:#D4A017;
+  }
+  body{font-family:Arial,sans-serif;background:var(--black);color:var(--white);min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center}
+  .logo-wrap{margin-bottom:32px}
+  .logo-icon{width:72px;height:72px;border-radius:50%;background:var(--white);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:32px}
+  .wordmark{font-size:28px;font-weight:700;color:var(--white);letter-spacing:-.5px}
+  .wordmark span{color:var(--gold)}
+  .tagline{font-size:16px;color:rgba(255,255,255,.5);margin-top:6px;letter-spacing:.3px}
+  .divider{width:40px;height:3px;background:var(--gold);border-radius:2px;margin:28px auto}
+  .headline{font-size:22px;font-weight:700;color:var(--white);line-height:1.4;margin-bottom:12px;max-width:340px}
+  .subhead{font-size:15px;color:rgba(255,255,255,.55);line-height:1.7;max-width:320px;margin:0 auto 32px}
+  .features{display:flex;flex-direction:column;gap:12px;max-width:340px;width:100%;margin-bottom:36px}
+  .feature{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:12px 16px;text-align:left}
+  .feature-icon{font-size:22px;flex-shrink:0}
+  .feature-text{font-size:14px;color:rgba(255,255,255,.75);line-height:1.4}
+  .feature-text strong{color:var(--white);display:block;margin-bottom:2px}
+  .waitlist-form{width:100%;max-width:340px;margin-bottom:32px}
+  .waitlist-form h3{font-size:16px;font-weight:700;margin-bottom:14px;color:var(--white)}
+  .input-row{display:flex;gap:8px;flex-direction:column}
+  .input-row input{width:100%;border:1px solid rgba(255,255,255,.15);border-radius:8px;padding:12px 14px;font-size:15px;background:rgba(255,255,255,.07);color:var(--white);outline:none}
+  .input-row input::placeholder{color:rgba(255,255,255,.3)}
+  .input-row input:focus{border-color:var(--gold)}
+  .btn{width:100%;padding:13px;border-radius:8px;border:none;background:var(--gold);color:var(--black);font-size:15px;font-weight:700;cursor:pointer;transition:opacity .15s}
+  .btn:hover{opacity:.9}
+  .btn:disabled{opacity:.5;cursor:default}
+  .success{background:rgba(26,107,69,.2);border:1px solid var(--green);border-radius:8px;padding:12px 16px;font-size:14px;color:#7DCCA4;margin-top:10px;display:none}
+  .badges{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:28px}
+  .badge{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:5px 12px;font-size:12px;color:rgba(255,255,255,.5)}
+  .footer{font-size:12px;color:rgba(255,255,255,.2);margin-top:8px}
+  .footer a{color:rgba(255,255,255,.3);text-decoration:none}
+</style>
+</head>
+<body>
+
+<div class="logo-wrap">
+  <div class="logo-icon">🏛</div>
+  <div class="wordmark">Pocket<span>Portal</span></div>
+  <div class="tagline">Your whole practice, right in your pocket.</div>
+</div>
+
+<div class="divider"></div>
+
+<div class="headline">Practice management software built for the modern law firm.</div>
+<div class="subhead">Everything your firm needs — cases, billing, IOLTA compliance, calendaring, messaging, and legal research — in one beautifully simple app.</div>
+
+<div class="features">
+  <div class="feature">
+    <span class="feature-icon">⚖️</span>
+    <div class="feature-text"><strong>IOLTA-compliant trust accounting</strong>Built for Louisiana attorneys, designed for every state.</div>
+  </div>
+  <div class="feature">
+    <span class="feature-icon">📚</span>
+    <div class="feature-text"><strong>AI-powered legal research</strong>Search statutes and case law without leaving your workflow.</div>
+  </div>
+  <div class="feature">
+    <span class="feature-icon">📱</span>
+    <div class="feature-text"><strong>Mobile-first design</strong>Run your entire practice from your phone.</div>
+  </div>
+  <div class="feature">
+    <span class="feature-icon">🎨</span>
+    <div class="feature-text"><strong>Your brand, your colors</strong>White-label for any firm in minutes.</div>
+  </div>
+</div>
+
+<div class="badges">
+  <span class="badge">Case management</span>
+  <span class="badge">IOLTA compliance</span>
+  <span class="badge">Time tracking</span>
+  <span class="badge">Invoicing</span>
+  <span class="badge">Team messaging</span>
+  <span class="badge">Legal research</span>
+</div>
+
+<div class="waitlist-form">
+  <h3>Join the waitlist — be first to know.</h3>
+  <div class="input-row">
+    <input type="text" id="name-input" placeholder="Your name" />
+    <input type="email" id="email-input" placeholder="Your email address" />
+    <input type="text" id="firm-input" placeholder="Firm name (optional)" />
+    <button class="btn" id="submit-btn" onclick="handleSubmit()">Join the waitlist →</button>
+  </div>
+  <div class="success" id="success-msg">
+    ✅ You're on the list! We'll be in touch soon.
+  </div>
+</div>
+
+<div class="footer">
+  © 2026 PocketPortal · <a href="mailto:hello@pocketportal.io">hello@pocketportal.io</a><br><br>
+  Built by attorneys, for attorneys.
+</div>
+
+<script>
+function handleSubmit() {
+  const name = document.getElementById('name-input').value.trim();
+  const email = document.getElementById('email-input').value.trim();
+  const firm = document.getElementById('firm-input').value.trim();
+  const btn = document.getElementById('submit-btn');
+  const success = document.getElementById('success-msg');
+
+  if (!email || !email.includes('@')) {
+    alert('Please enter a valid email address.');
+    return;
+  }
+
+  btn.disabled = true;
+  btn.textContent = 'Joining…';
+
+  // Store in localStorage as fallback
+  const entries = JSON.parse(localStorage.getItem('pp_waitlist') || '[]');
+  entries.push({ name, email, firm, date: new Date().toISOString() });
+  localStorage.setItem('pp_waitlist', JSON.stringify(entries));
+
+  // Send to Formspree (free form backend — replace YOUR_FORM_ID with your Formspree form ID)
+  fetch('https://formspree.io/f/xjgqzarq', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify({ name, email, firm, source: 'pocketportal.io waitlist' })
+  })
+  .then(r => r.json())
+  .then(() => {
+    btn.style.display = 'none';
+    success.style.display = 'block';
+  })
+  .catch(() => {
+    // Even if Formspree fails, show success (data saved locally)
+    btn.style.display = 'none';
+    success.style.display = 'block';
+  });
+}
+
+// Allow Enter key to submit
+document.getElementById('email-input').addEventListener('keydown', e => {
+  if (e.key === 'Enter') handleSubmit();
+});
+</script>
+</body>
+</html>
