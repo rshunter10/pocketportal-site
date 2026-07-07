@@ -25,22 +25,19 @@
 <section class="contact-hero">
   <div class="container">
     <div class="contact-grid">
-
-      <!-- FORM -->
       <div class="contact-form-wrap">
         <div class="section-badge">Free 30-minute demo</div>
         <h1>See PocketPortal in action.</h1>
         <p style="color:rgba(255,255,255,.6);font-size:15px;margin-bottom:28px;line-height:1.7">Tell us a little about your practice and we'll show you exactly how PocketPortal fits your workflow — no generic pitch, no pressure.</p>
-
         <form id="demo-form">
           <div class="form-row">
             <div class="form-field">
               <label>First name</label>
-              <input type="text" id="f-first" placeholder="Raushanah" required>
+              <input type="text" id="f-first" placeholder="First name" required>
             </div>
             <div class="form-field">
               <label>Last name</label>
-              <input type="text" id="f-last" placeholder="Hunter" required>
+              <input type="text" id="f-last" placeholder="Last name" required>
             </div>
           </div>
           <div class="form-field">
@@ -49,11 +46,11 @@
           </div>
           <div class="form-field">
             <label>Firm name</label>
-            <input type="text" id="f-firm" placeholder="Hunter Legal, LLC">
+            <input type="text" id="f-firm" placeholder="Your firm name">
           </div>
           <div class="form-field">
             <label>State bar</label>
-            <input type="text" id="f-state" placeholder="Louisiana">
+            <input type="text" id="f-state" placeholder="e.g. Louisiana">
           </div>
           <div class="form-field">
             <label>Practice size</label>
@@ -70,8 +67,8 @@
             <input type="text" id="f-area" placeholder="e.g. Estate planning, family law, criminal defense">
           </div>
           <div class="form-field">
-            <label>What's your biggest practice management challenge right now?</label>
-            <textarea id="f-challenge" placeholder="Tell us what's not working with your current setup..."></textarea>
+            <label>What is your biggest practice management challenge right now?</label>
+            <textarea id="f-challenge" placeholder="Tell us what is not working with your current setup..."></textarea>
           </div>
           <div class="form-field">
             <label>Which plan are you most interested in?</label>
@@ -82,14 +79,13 @@
               <option>Premium ($99+/user/mo)</option>
             </select>
           </div>
-          <button type="button" class="btn btn-gold" id="submit-demo" onclick="handleDemoSubmit()" style="margin-top:8px">Request my free demo →</button>
+          <button type="button" class="btn btn-gold" id="submit-demo" onclick="handleDemoSubmit()" style="margin-top:8px">Request my free demo</button>
           <div id="demo-success" style="display:none;background:rgba(26,107,69,.2);border:1px solid #1A6B45;border-radius:8px;padding:14px 16px;font-size:14px;color:#7DCCA4;margin-top:12px;line-height:1.6">
-            ✅ <strong>Thank you!</strong> We've received your request and will be in touch within 2-3 business days to schedule your demo.
+            Thank you — we have received your request and will be in touch within 2-3 business days to schedule your demo.
           </div>
         </form>
       </div>
 
-      <!-- SIDEBAR -->
       <div class="contact-sidebar">
         <div class="sidebar-card">
           <h3>What to expect</h3>
@@ -103,45 +99,42 @@
           <div class="expect-item">
             <div class="expect-num">02</div>
             <div>
-              <strong>We'll reach out within 2-3 business days</strong>
-              <p>A real person — not a bot — will contact you within 2-3 business days to schedule your 30-minute session.</p>
+              <strong>We will reach out within 2-3 business days</strong>
+              <p>A real person will contact you to schedule a 30-minute session.</p>
             </div>
           </div>
           <div class="expect-item">
             <div class="expect-num">03</div>
             <div>
               <strong>See it live</strong>
-              <p>We'll walk you through the features most relevant to your practice — no generic pitch.</p>
+              <p>We will walk you through the features most relevant to your practice.</p>
             </div>
           </div>
           <div class="expect-item">
             <div class="expect-num">04</div>
             <div>
               <strong>Start your free trial</strong>
-              <p>14 days free, no credit card required. We'll help you get set up.</p>
+              <p>14 days free, no credit card required. We will help you get set up.</p>
             </div>
           </div>
         </div>
 
         <div class="sidebar-card sidebar-card-dark">
           <h3>Questions? Just ask.</h3>
-          <p style="color:rgba(255,255,255,.6);font-size:14px;margin-bottom:16px">Prefer to reach out directly? We're happy to help.</p>
+          <p style="color:rgba(255,255,255,.6);font-size:14px;margin-bottom:16px">Prefer to reach out directly? We are happy to help.</p>
           <div class="contact-direct">
-            <div>📧</div>
             <a href="mailto:hello@pocketportal.io">hello@pocketportal.io</a>
           </div>
           <div class="contact-direct" style="margin-top:10px">
-            <div>🌐</div>
             <a href="https://pocketportal.io">pocketportal.io</a>
           </div>
         </div>
 
         <div class="sidebar-card">
           <h3>Already an LSBA member?</h3>
-          <p style="font-size:14px;color:rgba(255,255,255,.6);line-height:1.6">Louisiana attorneys get free vLex Fastcase access through their LSBA membership. PocketPortal is designed to work alongside vLex Fastcase, the free legal research tool included with your LSBA membership — so you can search Louisiana statutes and case law without ever leaving your workflow.</p>
+          <p style="font-size:14px;color:rgba(255,255,255,.6);line-height:1.6">PocketPortal is designed to work alongside vLex Fastcase, the free legal research tool included with your LSBA membership — so you can search Louisiana statutes and case law without ever leaving your workflow.</p>
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -167,7 +160,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <div class="container">© 2026 PocketPortal · hello@pocketportal.io · Built by attorneys, for attorneys.</div>
+    <div class="container">&copy; 2026 PocketPortal &middot; hello@pocketportal.io &middot; Built by attorneys, for attorneys.</div>
   </div>
 </footer>
 
@@ -177,36 +170,13 @@ function handleDemoSubmit() {
   const email = document.getElementById('f-email').value.trim();
   const btn = document.getElementById('submit-demo');
   const success = document.getElementById('demo-success');
-
-  if (!first || !email || !email.includes('@')) {
-    alert('Please fill in your name and email address.');
-    return;
-  }
-
-  btn.disabled = true;
-  btn.textContent = 'Sending…';
-
-  const data = {
-    name: first + ' ' + document.getElementById('f-last').value.trim(),
-    email,
-    firm: document.getElementById('f-firm').value,
-    state: document.getElementById('f-state').value,
-    size: document.getElementById('f-size').value,
-    area: document.getElementById('f-area').value,
-    challenge: document.getElementById('f-challenge').value,
-    plan: document.getElementById('f-plan').value,
-    source: 'pocketportal.io demo request',
-  };
-
-  fetch('https://formspree.io/f/xjgqzarq', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-    body: JSON.stringify(data),
-  })
+  if (!first || !email || !email.includes('@')) { alert('Please fill in your name and email address.'); return; }
+  btn.disabled = true; btn.textContent = 'Sending...';
+  const data = { name: first + ' ' + document.getElementById('f-last').value.trim(), email, firm: document.getElementById('f-firm').value, state: document.getElementById('f-state').value, size: document.getElementById('f-size').value, area: document.getElementById('f-area').value, challenge: document.getElementById('f-challenge').value, plan: document.getElementById('f-plan').value, source: 'pocketportal.io demo request' };
+  fetch('https://formspree.io/f/xjgqzarq', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(data) })
   .then(() => { btn.style.display = 'none'; success.style.display = 'block'; })
   .catch(() => { btn.style.display = 'none'; success.style.display = 'block'; });
 }
 </script>
-
 </body>
 </html>
