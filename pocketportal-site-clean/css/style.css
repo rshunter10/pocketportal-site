@@ -262,3 +262,19 @@ h3{font-size:18px;font-weight:700;margin-bottom:10px}
 .mock-nav-item { display: flex; flex-direction: column; align-items: center; font-size: 8px; color: rgba(255,255,255,.45); gap: 2px; padding: 3px 2px; font-weight: 600; }
 .mock-nav-item.active { color: #D4A017; }
 .mock-icons { font-size: 11px; color: rgba(255,255,255,.6); font-weight: 600; letter-spacing: .5px; }
+
+/* ── Legal pages ─────────────────────────────────────────── */
+.legal{padding:64px 0 80px;background:var(--dark)}
+.legal .container{max-width:780px}
+.legal h1{font-size:clamp(30px,4.5vw,42px);margin-bottom:8px}
+.legal .legal-meta{color:var(--gray);font-size:14px;margin-bottom:36px}
+.legal h2{font-size:22px;margin:40px 0 12px;color:var(--white)}
+.legal p,.legal li{font-size:15.5px;color:rgba(255,255,255,.78);line-height:1.75}
+.legal p{margin-bottom:14px}
+.legal ul{margin:0 0 16px 22px}
+.legal li{margin-bottom:6px}
+.legal a{color:var(--gold);text-decoration:underline}
+.legal table{width:100%;border-collapse:collapse;margin:8px 0 20px;font-size:14.5px}
+.legal th,.legal td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--border);vertical-align:top;color:rgba(255,255,255,.78)}
+.legal th{color:var(--white);font-weight:700;background:rgba(255,255,255,.04)}
+.legal-note{background:rgba(212,160,23,.1);border:1px solid rgba(212,160,23,.3);border-radius:10px;padding:14px 16px;margin-bottom:28px;font-size:14.5px;color:rgba(255,255,255,.85)}
